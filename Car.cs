@@ -36,6 +36,7 @@ namespace CarLab
         {
             return $"{Make}\t{Model}\t{Year}\t{Price}";
         }
+        public static List<Car> cars = new List<Car>();
 
     }
 }
