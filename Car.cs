@@ -45,5 +45,9 @@ namespace CarLab
                 Console.WriteLine($"{i + 1}. {cars[i]}");
             }
         }
+        public static void Remove(int i)
+        {
+            cars.RemoveAt(i);
+        }
     }
 }
