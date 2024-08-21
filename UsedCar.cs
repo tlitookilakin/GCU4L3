@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CarLab
+﻿namespace CarLab
 {
     internal class UsedCar : Car
     {
@@ -16,7 +10,7 @@ namespace CarLab
         }
         public override string ToString()
         {
-            return $"{base.ToString()} + {Mileage}";
+            return $"{base.ToString()}\t{Mileage}";
         }
     }
 }

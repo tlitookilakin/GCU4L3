@@ -38,5 +38,12 @@ namespace CarLab
         }
         public static List<Car> cars = new List<Car>();
 
+        public static void ListCars()
+        {
+            for (int i = 0; i < cars.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {cars[i]}");
+            }
+        }
     }
 }
