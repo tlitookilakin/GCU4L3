@@ -16,11 +16,14 @@ class Program
         Car.ListCars();
         Console.WriteLine("Which car would you like to buy?");
         int input;
-        while (!int.TryParse(Console.ReadLine(),out input) || input > Car.cars.Count || input <1)
+        while (!int.TryParse(Console.ReadLine(), out input) || input > Car.cars.Count || input < 1)
         {
             Console.WriteLine("Enter the valid input");
         }
-
+        input--;
+        Console.WriteLine($"{Car.cars[input]}");
+        Car.Remove(input);
+        Car.ListCars();
     }
 
 }
